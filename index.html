@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleaning Service App</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("-wyt9mSgpdN6z28YS");
+     })();
+  </script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Navn?</h1>
+    <form id="cleaning-form" enctype="multipart/form-data">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="file-input">Take or Upload a Picture:</label>
+      <input type="file" id="file-input" accept="image/*" capture="camera" required>
+
+      <button type="submit">Send Report</button>
+    </form>
+    <div id="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
