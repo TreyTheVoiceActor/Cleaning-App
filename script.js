@@ -50,7 +50,7 @@ document.getElementById('cleaning-form').addEventListener('submit', function(eve
             // Convert resized image to base64
             const resizedBase64 = canvas.toDataURL(file.type === 'image/png' ? 'image/jpeg' : file.type, 0.8);
 
-            emailjs.send("your_service_id", "your_template_id", {
+            emailjs.send("service_2zy89uv", "template_d6p36og", {
                 user_email: email,
                 image_base64: resizedBase64
             }).then(function(response) {
